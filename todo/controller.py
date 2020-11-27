@@ -27,12 +27,12 @@ class Controller:
         :return:
         """
         if "add" in chain_text:
-            print("comando add introducido")
+             return "comando add introducido"
         if "modify" in chain_text:
-            print("comando modify")
+            return "comando modify"
         if "list" in chain_text:
-            print("comando list")
+            return "comando list"
         if "done" in chain_text:
-            print("command done")
+            return "command done"
         if "start" in chain_text:
-            print("the command start")
+            return "the command start"
