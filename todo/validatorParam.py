@@ -25,6 +25,13 @@ class ValidatorParameter(Enum):
         self.validator_instance = validator_instance
 
     @staticmethod
+    def exists(value):
+        for validator in ValidatorParameter:
+            if validator.name.lower() == value:
+                return True
+        return False
+
+    @staticmethod
     def get_validator(validator_name):
         for validator in ValidatorParameter:
             if validator.name.lower() == validator_name:
