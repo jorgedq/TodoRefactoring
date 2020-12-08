@@ -98,6 +98,8 @@ class Controller:
             else:
                 print(self.COMMAND.get_command(command))
 
+def this_new_method():
+    print("hello world")
 
 if __name__ == "__main__":
     command = Command_Generate()
